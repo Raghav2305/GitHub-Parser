@@ -13,6 +13,23 @@ load_dotenv()
 app = Flask(__name__)
 CORS(app)
 
+def insert_path(tree, path_parts):
+    """Recursively inserts parts into the nested dict structure."""
+    current = tree
+    for part in path_parts[:-1]:
+        current = current.setdefault(part, {})
+    current[path_parts[-1]] = {}
+
+def build_nested_tree(flat_structure):
+    """Takes the categorized_files and returns a nested tree for frontend display."""
+    tree = {}
+    for category, paths in flat_structure.items():
+        category_node = tree.setdefault(category, {})
+        for path in paths:
+            path_parts = path.replace("\\", "/").split("/")
+            insert_path(category_node, path_parts)
+    return tree
+
 
 @app.route("/summarize", methods=["POST"])
 def summarize_repo():
@@ -28,13 +45,15 @@ def summarize_repo():
 
         # Step 2: Categorize files
         categorized_files = get_categorized_files(local_path)
+        nested_structure = build_nested_tree(categorized_files)
+        print(f"Categorized files: {categorized_files}")
 
         # Step 3: Generate summary
         summary = generate_summary_with_gemini(categorized_files)
 
         return jsonify({
             "summary": summary,
-            "structure": categorized_files
+            "structure": nested_structure
         })
 
     except Exception as e:

@@ -3,15 +3,60 @@
 <head>
   <title>Repo Summarizer</title>
   <style>
-    body { font-family: sans-serif; padding: 10px; width: 300px; }
-    button { margin-top: 10px; padding: 8px; width: 100%; }
-    pre { background: #f4f4f4; padding: 5px; max-height: 200px; overflow-y: auto; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 16px;
+      width: 320px;
+      background: #1e1e2f;
+      color: #f5f5f5;
+      margin: 0;
+    }
+
+    h3 {
+      margin-top: 0;
+      font-size: 18px;
+      color: #58a6ff;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      border-radius: 6px;
+      background: #58a6ff;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s ease-in-out;
+    }
+
+    button:hover {
+      background: #2f81f7;
+    }
+
+    pre {
+      background: #282c34;
+      padding: 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      line-height: 1.4;
+      color: #e2e2e2;
+      overflow-x: auto;
+      max-height: 250px;
+    }
+
+    #result {
+      margin-top: 12px;
+      white-space: pre-wrap;
+    }
   </style>
 </head>
 <body>
   <h3>Summarize This Repo</h3>
-  <button id="summarizeBtn">Get Summary</button>
+  <button id="summarizeBtn">📄 Generate Summary</button>
   <pre id="result">Click to analyze a GitHub repo page.</pre>
+
   <script src="popup.js"></script>
 </body>
 </html>

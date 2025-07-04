@@ -1,41 +1,43 @@
 📁 Categorized Repository Files
 
 🔹 SOURCE_CODE:
-  - Spring-Security-Client\mvnw.cmd
-  - Spring-Security-Client\src\main\java\com\example\raghav\SpringSecurityClient\SpringSecurityClientApplication.java
-  - Spring-Security-Client\src\main\java\com\example\raghav\SpringSecurityClient\Config\WebSecurityConfig.java
-  - Spring-Security-Client\src\main\java\com\example\raghav\SpringSecurityClient\Controller\HelloController.java
-  - Spring-Security-Client\src\main\java\com\example\raghav\SpringSecurityClient\Controller\RegistrationController.java
-  - Spring-Security-Client\src\main\java\com\example\raghav\SpringSecurityClient\Entity\User.java
-  - Spring-Security-Client\src\main\java\com\example\raghav\SpringSecurityClient\Entity\VerificationToken.java
-  - Spring-Security-Client\src\main\java\com\example\raghav\SpringSecurityClient\Event\RegistrationCompleteEvent.java
-  - Spring-Security-Client\src\main\java\com\example\raghav\SpringSecurityClient\Event\ResendTokenEvent.java
-  - Spring-Security-Client\src\main\java\com\example\raghav\SpringSecurityClient\Event\Listener\RegistrationCompleteEventListener.java
-  - Spring-Security-Client\src\main\java\com\example\raghav\SpringSecurityClient\Event\Listener\ResendTokenEventListener.java
-  - Spring-Security-Client\src\main\java\com\example\raghav\SpringSecurityClient\Model\UserModel.java
-  - Spring-Security-Client\src\main\java\com\example\raghav\SpringSecurityClient\Repository\UserRepository.java
-  - Spring-Security-Client\src\main\java\com\example\raghav\SpringSecurityClient\Repository\VerificationTokenRepository.java
-  - Spring-Security-Client\src\main\java\com\example\raghav\SpringSecurityClient\Service\EmailService.java
-  - Spring-Security-Client\src\main\java\com\example\raghav\SpringSecurityClient\Service\EmailServiceImplementation.java
-  - Spring-Security-Client\src\main\java\com\example\raghav\SpringSecurityClient\Service\UserService.java
-  - Spring-Security-Client\src\main\java\com\example\raghav\SpringSecurityClient\Service\UserServiceImplementation.java
-  - Spring-Security-Client\src\test\java\com\example\raghav\SpringSecurityClient\SpringSecurityClientApplicationTests.java
+  - app.py
+  - main.py
+  - chrome_extension\content.js
+  - chrome_extension\manifest.json
+  - chrome_extension\popup.js
+  - repo_scanner\categorizer.py
+  - repo_scanner\cloneRepo.py
+  - repo_scanner\summarizer.py
+  - repo_scanner\__init__.py
+  - repo_scanner\__pycache__\categorizer.cpython-39.pyc
+  - repo_scanner\__pycache__\cloneRepo.cpython-39.pyc
+  - repo_scanner\__pycache__\summarizer.cpython-39.pyc
+  - repo_scanner\__pycache__\__init__.cpython-39.pyc
+  - utils\output_writer.py
+  - utils\__init__.py
+  - utils\__pycache__\output_writer.cpython-39.pyc
+  - utils\__pycache__\__init__.cpython-39.pyc
 
 🔹 TESTS:
   (none)
 
 🔹 CONFIGURATION:
-  - Spring-Security-Client\src\main\resources\application.yml
+  (none)
 
 🔹 DOCUMENTATION:
-  - README.md
+  (none)
 
 🔹 ASSETS:
-  (none)
+  - chrome_extension\icon.png
 
 🔹 OTHERS:
   - .gitignore
-  - pom.xml
+  - cert.pem
+  - key.pem
+  - repo_structure.txt
+  - repo_summary.txt
+  - requirements.txt
   - .git\config
   - .git\description
   - .git\HEAD
@@ -58,18 +60,9 @@
   - .git\logs\HEAD
   - .git\logs\refs\heads\master
   - .git\logs\refs\remotes\origin\HEAD
-  - .git\objects\pack\pack-4e25e9d800b9561f2f9d06e78fae2417ef14a8c3.idx
-  - .git\objects\pack\pack-4e25e9d800b9561f2f9d06e78fae2417ef14a8c3.pack
+  - .git\objects\pack\pack-4c46d26f0b9014a202b82967cee6ca1ae97bb937.idx
+  - .git\objects\pack\pack-4c46d26f0b9014a202b82967cee6ca1ae97bb937.pack
   - .git\refs\heads\master
   - .git\refs\remotes\origin\HEAD
-  - .idea\.gitignore
-  - .idea\encodings.xml
-  - .idea\misc.xml
-  - .idea\uiDesigner.xml
-  - .idea\vcs.xml
-  - Spring-Security-Client\.gitignore
-  - Spring-Security-Client\mvnw
-  - Spring-Security-Client\pom.xml
-  - Spring-Security-Client\.mvn\wrapper\maven-wrapper.jar
-  - Spring-Security-Client\.mvn\wrapper\maven-wrapper.properties
+  - chrome_extension\popup.html
 
